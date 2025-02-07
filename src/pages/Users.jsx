@@ -17,7 +17,7 @@ export default function Users(){
                   ? "" 
                   : gender == "male"
                   ? "&gender=male"
-                  : "&gender=female
+                  : "&gender=female"
                 }`
             );
             setUsers(response.data.results);
