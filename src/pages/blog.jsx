@@ -7,14 +7,14 @@ function Blog() {
   const [age, setAge] = useState(0);
   const [description, setDescription] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
   };
 
   return (
-    <div className="formContainer">
+    <div className="flex p-8 items-center justify-center h-screen w-full">
+      <div className="w-full sm:w-[70%] md:w-[65%] lg:w-[50%] x1:w-[45%] 2x1:w-[40%]">
       {!submitted ?(
         <UserForm
         handleSubmit={handleSubmit}
@@ -30,7 +30,7 @@ function Blog() {
       )}
       <h1 className="text-3xl font-bold underline">
       Hello world!</h1>
-      
+      </div>
     </div>
   );
 }

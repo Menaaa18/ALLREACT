@@ -6,6 +6,9 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 import About from './pages/About';
 import Blog from './pages/blog'
+import Users from './pages/Users';
+import SingleUser from './pages/SingleUser';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +20,9 @@ root.render(
         <Route path = "/home" element={<App/>}></Route>
         <Route path = "/about" element={<About/>}></Route>
         <Route path = "/blog" element={<Blog/>}></Route>
+        <Route path = "/Users" element={<Users/>}></Route>
+        <Route path = "/Users/:id" element={<SingleUser/>}></Route>
+        
       </Routes>
     </Router>
     

@@ -78,3 +78,18 @@ code {
   flex-direction: column;
   gap: 5px;
 }
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(45deg, pink, purple);
+  color: white;
+  a:hover {
+    color: black;
+  } 
+}
+
+.navbar ul{
+  display: flex;
+  justify-items: space-between;
+}
